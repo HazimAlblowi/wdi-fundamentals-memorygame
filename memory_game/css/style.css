@@ -10,6 +10,7 @@ h1 {
 	font-weight: 400;
 	font-size: 45px;
 	margin: 0;
+	text-transform: uppercase;
 }
 
 h2 {
@@ -18,6 +19,7 @@ h2 {
 	letter-spacing: 1px;
 	font-weight: 600;
 	font-size: 20px;
+	text-transform: uppercase;
 }
 
 a {
@@ -28,10 +30,13 @@ a {
 	font-size: 18px;
 	text-decoration: none;
 	margin: 0 20px;
+	border-bottom: 2px solid transparent;
+	text-transform: uppercase;
+
 }
 
 p {
-	font-family: "Droid Serif", Serif;
+	font-family: 'Droid Serif', Serif;
 	line-height: 26px;
 	font-size: 18px;
 }
@@ -55,4 +60,41 @@ main {
 
 img {
 	margin: 40px 8px;
+}
+
+footer {
+	text-transform: uppercase;
+	padding: 0px 20px;
+	background-color: #0D2C40;
+	color: white;
+	font-size: 14px;
+	letter-spacing: .08em;
+	font-weight: 800;
+}
+
+.copyright {
+	font-family: Raleway, sans-serif;
+	float: left;
+}
+
+.message {
+	font-family: Raleway, sans-serif;
+	float: right;
+}
+.clearfix:after {
+visibility: hidden;
+display: block;
+content: " ";
+clear: both;
+height: 0;
+font-size: 0;
+}
+
+.name {
+	color: #F15B31;
+	font-weight: 
+}
+
+a:hover {
+	border-color: white;
 }
