@@ -24,6 +24,22 @@ var cards = [
 
 ];
 var cardsInPlay = [];
+var wins = 0;
+var losses = 0;
+
+function reset() {
+	//change the images of the card to the back. 
+	var cardsToReset = document.getElementsByClassName("gameCards");
+	for (var i = 0; i < cardsToReset.length; i++) {
+		cardsToReset[i].setAttribute("src", "images/back.png");
+	}
+
+	//empty the cardsInPlay
+	cardsInPlay.splice(0,cardsInPlay.length)
+
+
+	console.log("Flipped images back");
+}
 
 function createBoard(){
 	for (var i = 0; i < cards.length; i++){
@@ -38,11 +54,20 @@ function createBoard(){
 
 function checkForMatch(){
 
-	if (cardsInPlay[0] === cardsInPlay[1])
+	if (cardsInPlay[0] === cardsInPlay[1]){
 		alert("You found a match!");
-	else
+		//Increase number of wins
+		wins++;
+		document.getElementsByClassName("score")[1].innerHTML = "Wins: " + wins;
+		console.log("Win!");
+	}
+	else{
 		alert("Sorry, try again.");
-	
+		//Increase number of losses
+		losses++;
+		document.getElementsByClassName("score")[0].innerHTML = "Losses: " + losses;
+		console.log("Loss!");
+	}
 }
 
 function flipCard() {
@@ -61,6 +86,9 @@ function flipCard() {
 
 createBoard();
 
+var resetButton = document.getElementById("resetButton");
+
+resetButton.addEventListener("click", reset);
 
 
 

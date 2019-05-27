@@ -98,3 +98,31 @@ a:hover {
 	color: #F15B31;
 	font-weight: 700;
 }
+
+.button {
+	display: inline-block;
+	float: left;
+	padding: 13px 26px;
+	margin: 40px 0px 0px 60px;
+	border-radius: 5px;
+	color:#ffffff; 
+	text-decoration: none;
+	background-color: #00a6b3;
+	cursor: pointer;
+
+}
+.button:hover {
+	background-color: #f15b31;
+}
+
+.score {
+	display: inline-block;
+	float: right;
+	padding: 13px 26px;
+	margin: 40px 60px 0px 0px;
+	border-radius: 5px;
+	color:#ffffff; 
+	text-decoration: none;
+	background-color: #0D2C40;
+
+}
