@@ -89,12 +89,12 @@ clear: both;
 height: 0;
 font-size: 0;
 }
+a:hover {
+	border-color: white;
+}
+
 
 .name {
 	color: #F15B31;
-	font-weight: 
-}
-
-a:hover {
-	border-color: white;
+	font-weight: 700;
 }
